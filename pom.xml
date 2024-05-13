@@ -61,6 +61,19 @@
 					</excludes>
 				</configuration>
 			</plugin>
+			<!--plugin para fazer o jar da aplicação no momento do package-->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-jar-plugin</artifactId>
+				<version>3.2.2</version>
+				<configuration>
+					<archive>
+						<manifest>
+							<mainClass>com.tms.TmsForTaskManagementApplication</mainClass> <!-- Classe principal da aplicação -->
+						</manifest>
+					</archive>
+				</configuration>
+			</plugin>
 		</plugins>
 	</build>
 
